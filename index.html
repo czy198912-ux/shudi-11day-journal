@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>蜀地十一日 · 旅行手记（公开版）</title>
+<style>
+:root{
+  --brand:#0d9488;--brand-2:#059669;--brand-soft:#f0fdfa;
+  --card:#ffffff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb;
+  --radius:14px;--shadow:0 1px 3px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:#f3f4f6;color:var(--text);line-height:1.75}
+.wrap{max-width:820px;margin:0 auto;padding:16px}
+.hero{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;
+  border-radius:var(--radius);padding:30px 24px;margin-bottom:16px}
+.hero h1{margin:0 0 8px;font-size:30px;letter-spacing:1px}
+.hero .sub{font-size:15px;opacity:.92;margin-bottom:14px}
+.tag{display:inline-block;background:rgba(255,255,255,.20);border-radius:999px;
+  padding:4px 12px;font-size:13px;margin:0 8px 8px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:18px;margin-bottom:16px}
+.intro p{margin:0 0 10px}
+.route{display:flex;flex-wrap:wrap;gap:8px}
+.route .stop{background:var(--brand-soft);border:1px solid #cdeee8;color:#0f766e;
+  border-radius:10px;padding:6px 10px;font-size:13px}
+.day-hd{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
+.day-no{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;
+  font-weight:700;border-radius:12px;min-width:54px;height:54px;display:flex;
+  align-items:center;justify-content:center;font-size:18px;flex:0 0 auto}
+.day-date{color:var(--muted);font-size:13px}
+.day-hd h2{margin:2px 0 2px;font-size:21px}
+.day-sub{color:var(--brand);font-size:14px}
+.day-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--muted);
+  border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);
+  padding:8px 0;margin-bottom:12px}
+.day-meta span{background:#f9fafb;border-radius:8px;padding:3px 9px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:6px 0 12px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;background:#eef2f3;display:block}
+.track{font-size:13px;color:var(--muted);background:var(--brand-soft);
+  border-left:4px solid var(--brand);border-radius:0 8px 8px 0;padding:8px 12px}
+.note{background:#fffbeb;border:1px solid #fde68a;color:#92400e;border-radius:10px;
+  padding:10px 12px;font-size:13px;margin-top:10px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+@media(max-width:560px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:100px}
+  .hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <h1>蜀地十一日 · 旅行手记</h1>
+    <div class="sub">2026.09.07 – 09.17 ｜ 成都 · 黄龙 · 九寨 · 川主寺 · 三星堆 · 都江堰 · 青城山 · 峨眉 · 乐山</div>
+    <div>
+      <span class="tag">11 天 10 晚</span>
+      <span class="tag">285 张照片</span>
+      <span class="tag">公开版 · GitHub Pages</span>
+      <span class="tag">轻量图片版</span>
+    </div>
+  </div>
+
+  <div class="card intro">
+    <h3>写在前面</h3>
+    <p>这不是一份攻略，是一段被照片钉住的旅程。每一天的文字底下，都压着真实的拍摄时间和地点——不是「建议几点去」，而是「我们那天几点到的」。</p>
+    <p>本版为公开轻量版，托管于 GitHub Pages：照片已压缩为 WebP 以加快加载，精剪视频（共 7 段）未打包以控制体积，如需观看视频版可向我索取离线压缩包。</p>
+  </div>
+
+  <div class="card">
+    <h3>路线总览</h3>
+    <div class="route">
+      <span class="stop">D1 出发·成都</span><span class="stop">D2 黄龙 3576m</span><span class="stop">D3 九寨沟</span>
+      <span class="stop">D4 川主寺返程</span><span class="stop">D5 熊猫·三星堆</span><span class="stop">D6 都江堰·青城山</span>
+      <span class="stop">D7 峨眉金顶 3079m</span><span class="stop">D8 峨眉·乐山</span><span class="stop">D9 成都市区</span><span class="stop">D10 锦里·归程</span>
+    </div>
+    <p class="note">海拔提示：成都约 500m，黄龙五彩池 3576m、峨眉金顶 3079m 为高海拔段，文中已标注体感；高原请放慢节奏、备好保暖与饮水。</p>
+  </div>
+
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D01</div>
+      <div>
+        <div class="day-date">09/07–09/08</div>
+        <h2>夜航向西，落进天府</h2>
+        <div class="day-sub">南京 → 成都天府国际机场</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 南京禄口机场 · 成都天府国际机场</span><span>⛰️ 出发海拔 ≈ 10m，落地 ≈ 500m</span><span>📸 当日 2 张</span>
+    </div>
+    <p>这趟旅程的第一张照片，停在 9 月 7 号傍晚的南京。还没离家，行李箱轮子在地砖上滚出很响的声音，像在给出发打拍子。</p>
+<p>真正动身是 8 号夜里。禄口到天府，云层之上看不见什么，只有舷窗里一小片被城市灯光染橙的地平线。22:47，飞机落在成都天府国际机场——比想象中安静，廊桥外是湿热的夜风。这一晚没有太多计划，只是把时差和疲惫一起丢进酒店，等天亮。</p>
+<p>十一日环线的第一颗扣子，就这样扣上了。</p>
+    <div class="gallery"><img src="assets/Day01_出发成都/IMG_20260908_194524.webp" loading="lazy" alt="夜航向西，落进天府"><img src="assets/Day01_出发成都/IMG_20260908_195552.webp" loading="lazy" alt="夜航向西，落进天府"></div>
+    <div class="track">🐾 足迹：南京禄口机场 · 成都天府国际机场</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D02</div>
+      <div>
+        <div class="day-date">09/09</div>
+        <h2>一天之内，从平原窜到云上</h2>
+        <div class="day-sub">成都 → 松潘·川主寺（途经）→ 黄龙</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 松潘川主寺 · 黄龙风景区</span><span>⛰️ 黄龙五彩池海拔 3576m</span><span>📸 当日 22 张</span>
+    </div>
+    <p>九月的川西，早晨的公路还笼着薄雾。车过松潘、川主寺一带时，窗外开始有了高原的轮廓——山脊一层叠一层，颜色从墨绿退到灰蓝。</p>
+<p>下午两点多进黄龙。这里最不讲道理的地方，是它让你在一天里从海拔五百直接爬到三千五。五彩池在 3576 米的地方，钙华一层层铺下来，像谁把调色盘打翻在山坡上。我们贴着 18:00 的闭园线离开，腿是软的，但回头看那一片蓝绿，值。</p>
+<p>高反是真实的：走快了会喘，站久了太阳穴发紧。所以这一程我学乖了——慢，是高原唯一的礼貌。</p>
+    <div class="gallery"><img src="assets/Day02_黄龙/IMG_20260909_131439.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_144518.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_144727.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_151435.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_151635.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_151638.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_151641.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_152755.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_153236.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_153315.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_153342.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_164107.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_164110.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_164120.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_164125.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_164131.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_165748.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_165920.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_170009.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_180215.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_180218.webp" loading="lazy" alt="一天之内，从平原窜到云上"><img src="assets/Day02_黄龙/IMG_20260909_181137.webp" loading="lazy" alt="一天之内，从平原窜到云上"></div>
+    <div class="track">🐾 足迹：松潘川主寺 · 黄龙风景区</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D03</div>
+      <div>
+        <div class="day-date">09/10</div>
+        <h2>把一整天的蓝，装进眼睛里</h2>
+        <div class="day-sub">九寨沟全天 · 夜观《九寨千古情》</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 九寨沟景区 · 甘海子（千古情）</span><span>⛰️ 沟内海拔 2000–3100m</span><span>📸 当日 68 张</span>
+    </div>
+    <p>九寨是被水写出来的地方。上午九点进沟，从芦苇海、盆景滩一路往里，水色是分层的绿和蓝，干净得不讲道理。五花海像一块被揉皱又摊开的宝石，珍珠滩的瀑布声隔着几百米就撞过来。</p>
+<p>我们沿着树正群海往回走，下午三点的光打在水面上，整座沟子都在发光。那天在沟里待到傍晚，拍得最密的一段就是 13:45 到 15:31——根本停不下来。</p>
+<p>夜里去了甘海子的《九寨千古情》。17:39 进场，一场主秀看到 19:10。藏羌的鼓点和灯光砸下来的时候，白天的山水忽然有了声音。</p>
+    <div class="gallery"><img src="assets/Day03_九寨沟/IMG_20260910_091730.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_092926.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_093058.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_093109.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_093237.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_093251.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_093515.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_093519.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_094818.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_094823.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_094922.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_094929.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_095056.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_095112.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_095248.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_095417.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_101438.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_101545.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_101710.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_102638.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_102838.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_103004.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_103056.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_103444.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_104039.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_105215.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_105848.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_105914.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_110015.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_110718.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_111228.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_111327.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_131205.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_131212.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_131252.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_131457.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_134509.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_134610.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_134626.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_135440.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_135449.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_135504.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_135557.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_135600.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_141035.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_141044.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_141449.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_141940.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_141950.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_142108.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_142142.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_142425.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150103.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150429.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150508.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150539.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150626.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150714.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_150750.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_151255.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_173952.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_173959.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_174737.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_174827_1.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_175012.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_175116.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_175129.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"><img src="assets/Day03_九寨沟/IMG_20260910_184255.webp" loading="lazy" alt="把一整天的蓝，装进眼睛里"></div>
+    <div class="track">🐾 足迹：九寨沟景区 · 甘海子（千古情）</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D04</div>
+      <div>
+        <div class="day-date">09/11</div>
+        <h2>把九寨留在身后，顺路致敬一段路</h2>
+        <div class="day-sub">九寨 → 川主寺（红军长征纪念碑碑园）→ 返成都</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 弓杠岭岷江源 · 川主寺红军长征纪念碑碑园</span><span>⛰️ 川主寺海拔 ≈ 3000m</span><span>📸 当日 35 张</span>
+    </div>
+    <p>返程不是匆匆掉头。车过弓杠岭、岷江源，路边观景台停了好几回——高原的云压得很低，河谷里的水是冷的绿。</p>
+<p>中午在川主寺停留，顺路去了红军长征纪念碑碑园。碑园在高处，风很大，碑身直直地指向天。我们没赶时间，慢慢走、慢慢看，拍了不少展板和碑身的照片。这趟环线里，这是唯一一处让人安静下来的地方。</p>
+<p>之后从黄龙九寨高铁站坐车回成都。窗外景色从高原草甸退成盆地丘陵，旅程的下半段，要换一种节奏了。</p>
+    <div class="gallery"><img src="assets/Day04_川主寺返程/IMG_20260911_095939.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_100005.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_100007.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_101438.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_101638.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_101657.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_101934.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_101942.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_123339.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_123746.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124030.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124041.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124051.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124143.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124423.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124748.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124809.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124832.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124854.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_124917.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125005.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125053.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125124.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125241.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125243.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125251.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_125410.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_130443.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_130453.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_130500.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_130505.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_130510.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_131059.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_131437.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"><img src="assets/Day04_川主寺返程/IMG_20260911_131550.webp" loading="lazy" alt="把九寨留在身后，顺路致敬一段路"></div>
+    <div class="track">🐾 足迹：弓杠岭岷江源 · 川主寺红军长征纪念碑碑园</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D05</div>
+      <div>
+        <div class="day-date">09/12</div>
+        <h2>早上看猫，下午看神</h2>
+        <div class="day-sub">成都大熊猫繁育研究基地 → 广汉三星堆</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 成都熊猫基地 · 广汉三星堆博物馆</span><span>⛰️ 熊猫基地 ≈ 500m · 三星堆 ≈ 500m</span><span>📸 当日 24 张</span>
+    </div>
+    <p>这天起得早，08:04 就到了熊猫基地。赶早是对的——晨间的熊猫最活跃，幼崽在架子上滚来滚去，成年熊猫抱着竹子啃得专心致志。我们在西区待到十点多，光线最好的一截全被我们赶上。</p>
+<p>下午转场广汉，三星堆是这天的重头。12:55 进馆，一直逛到 15:08——青铜大立人、纵目面具、神树，那种「超出想象」的冲击是照片拍不出来的，但 203 张照片说明我们真的很努力在拍。展柜前的玻璃映着人，也映着三千年前那只看不见的眼睛。</p>
+    <div class="gallery"><img src="assets/Day05_熊猫三星堆/IMG_20260912_081752.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_091048.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_091251.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_092758.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_092812.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_092820.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_094201.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_095430.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_102407.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_102413.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_102414.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_102415.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_102418.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_103457.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_103501.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_103641.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_131250.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_132138.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_134008.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_134012.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_134138.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_134154.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_135146.webp" loading="lazy" alt="早上看猫，下午看神"><img src="assets/Day05_熊猫三星堆/IMG_20260912_135803.webp" loading="lazy" alt="早上看猫，下午看神"></div>
+    <div class="track">🐾 足迹：成都熊猫基地 · 广汉三星堆博物馆</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D06</div>
+      <div>
+        <div class="day-date">09/13</div>
+        <h2>古人治水，今人问道</h2>
+        <div class="day-sub">都江堰景区 → 青城山</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 都江堰景区 · 青城山</span><span>⛰️ 都江堰 ≈ 740m · 青城山 ≈ 1000m</span><span>📸 当日 60 张</span>
+    </div>
+    <p>上午都江堰。站在鱼嘴分水堤上，才真正懂什么叫「乘势利导」——两千多年的工程还在替成都平原挡水、分水、引水。江水在脚下湍急地走，古人留下的弧度一点没变。</p>
+<p>下午上青城山。这座山是道教的名片，台阶藏在树影里，越往里越静。我们慢慢爬，不赶顶，就在幽深处听风过竹林。青城天下的「幽」，不是形容词，是实实在在裹住你的那层绿。</p>
+    <div class="gallery"><img src="assets/Day06_都江堰青城山/IMG_20260913_082429.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_082432.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_082453.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_082638.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_083857.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_083903.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_084131.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_084141.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_085728.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_085857.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090255.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090319.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090327.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090401.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090405.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090408.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090432.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090433.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090434.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090616.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090659.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_090927.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_091719.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_091746.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_092231.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_092238.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_095040.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_095114.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_095122.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_095414.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_095529.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_101156.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_104105.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_104117.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_104127.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_105835.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_105855.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_110147.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_110211.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_110229.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_131138.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_131343.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_131353.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_131517.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_131527.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_131549.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_132311.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_134433.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_143729.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_144151.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_145229.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_145957.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_150355.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_151401.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_152351.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_152354.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_155916.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_155931.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_155948.webp" loading="lazy" alt="古人治水，今人问道"><img src="assets/Day06_都江堰青城山/IMG_20260913_155957.webp" loading="lazy" alt="古人治水，今人问道"></div>
+    <div class="track">🐾 足迹：都江堰景区 · 青城山</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D07</div>
+      <div>
+        <div class="day-date">09/14</div>
+        <h2>赶在索道收班前，撞见云海</h2>
+        <div class="day-sub">峨眉山 · 雷洞坪 → 金顶</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 峨眉山雷洞坪 · 金顶</span><span>⛰️ 金顶海拔 3079m</span><span>📸 当日 18 张</span>
+    </div>
+    <p>这天的安排有点挤：下午才上山。12:08 到雷洞坪，坐索道往上，13:19 已经站在金顶附近。云在脚下翻，金顶那头还漏着太阳，光柱斜斜地插进山谷。</p>
+<p>但我们得赶——16:00 前必须离开金顶，再晚索道就收班了。那半个多小时是整趟里最紧的一段，也是最想再来一次的一段。云海不等人，下山时它已经把山顶收走了。</p>
+    <div class="gallery"><img src="assets/Day07_峨眉金顶/IMG_20260914_121957.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_122014.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_123105.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_123108.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_123110.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_123210.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_123212.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_123214.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_131908.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_132301.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_132536.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_132541.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_132628.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_132640.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_132647.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_143641.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_164646.webp" loading="lazy" alt="赶在索道收班前，撞见云海"><img src="assets/Day07_峨眉金顶/IMG_20260914_182140.webp" loading="lazy" alt="赶在索道收班前，撞见云海"></div>
+    <div class="track">🐾 足迹：峨眉山雷洞坪 · 金顶</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D08</div>
+      <div>
+        <div class="day-date">09/15</div>
+        <h2>山下的庙，江边的大佛</h2>
+        <div class="day-sub">峨眉山万年寺·清音阁 → 乐山大佛</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 峨眉山万年寺清音阁 · 乐山大佛</span><span>⛰️ 乐山大佛 ≈ 360m</span><span>📸 当日 24 张</span>
+    </div>
+    <p>上午回到峨眉山低处，万年寺、清音阁一线。双桥清音的水声很亮，生态猴区的猴子比游客还淡定。我们在这一带待到接近中午，山气是润的，石头台阶长着青苔。</p>
+<p>下午去乐山。大佛临江而坐，我们 14:55 到凌云山一侧，在栈道边远远望了那尊巨大的面孔。江风很大，大佛沉默地看了我们一眼，又继续看向远方的水流。</p>
+    <div class="gallery"><img src="assets/Day08_峨眉乐山/IMG_20260915_075439_1.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_075516.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_075557.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_080850.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_083721.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_095441.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_101436.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_101457.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_112449.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_112502.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_112511.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_112624.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_113049.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_113158.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_113202.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_113403.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150141.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150234.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150316.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150326.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150444.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150529.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_150545.webp" loading="lazy" alt="山下的庙，江边的大佛"><img src="assets/Day08_峨眉乐山/IMG_20260915_151403.webp" loading="lazy" alt="山下的庙，江边的大佛"></div>
+    <div class="track">🐾 足迹：峨眉山万年寺清音阁 · 乐山大佛</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D09</div>
+      <div>
+        <div class="day-date">09/16</div>
+        <h2>把成都的慢，过成一天</h2>
+        <div class="day-sub">杜甫草堂·浣花溪 → 宽窄巷子 → 武侯祠·锦里</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 浣花溪 · 宽窄巷子 · 武侯祠锦里</span><span>⛰️ 市区海拔 ≈ 500m</span><span>📸 当日 24 张</span>
+    </div>
+    <p>回到市区，节奏一下子松下来。早上九点多的草堂和浣花溪最好——竹林有雾，人少，诗里的那点幽静还能接上。我们慢慢走到十点多，像在替杜甫把那首「舍南舍北皆春水」又走了一遍。</p>
+<p>中午宽窄巷子，院落和茶馆挤在一起，灯笼还没全亮。下午武侯祠和锦里，红墙竹影，三国的事和成都的闲都被收进同一条街。16:51 离场时，锦里的灯刚好亮起来。</p>
+    <div class="gallery"><img src="assets/Day09_成都市区/IMG_20260916_091047.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_093440.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_100511.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_101537.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_102152.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_103256.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_103315.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_103343.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_110620.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_110852.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_110904.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_111014.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_111300.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_111309.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_111322.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_111449.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_151301.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_155452.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_160902.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_160910.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_160917.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_160925.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_162806.webp" loading="lazy" alt="把成都的慢，过成一天"><img src="assets/Day09_成都市区/IMG_20260916_163221.webp" loading="lazy" alt="把成都的慢，过成一天"></div>
+    <div class="track">🐾 足迹：浣花溪 · 宽窄巷子 · 武侯祠锦里</div>
+  </section>
+
+  <section class="card day">
+    <div class="day-hd">
+      <div class="day-no">D10</div>
+      <div>
+        <div class="day-date">09/17</div>
+        <h2>再回一次锦里，然后回家</h2>
+        <div class="day-sub">锦里·结义楼（返程日）</div>
+      </div>
+    </div>
+    <div class="day-meta">
+      <span>📍 锦里结义楼</span><span>⛰️ 市区海拔 ≈ 500m</span><span>📸 当日 8 张</span>
+    </div>
+    <p>最后一天很轻。中午又回了一次锦里，在结义楼一带走走停停，把前几天没拍够的机位补上。12:05 进场，到 13:38 才舍得走。</p>
+<p>14:22，最后一张照片定格。这趟从南京出发、绕了黄龙九寨峨眉乐山一圈的十一日，到此收尾。行李还是那一只，里面多了风、多了水声、多了好多张舍不得删的蓝。</p>
+    <div class="gallery"><img src="assets/Day10_锦里返程/IMG_20260917_120535.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_120545.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_121017.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_121912.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_122159.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_123122.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_133636.webp" loading="lazy" alt="再回一次锦里，然后回家"><img src="assets/Day10_锦里返程/IMG_20260917_133637.webp" loading="lazy" alt="再回一次锦里，然后回家"></div>
+    <div class="track">🐾 足迹：锦里结义楼</div>
+  </section>
+
+  <footer>蜀地十一日 · 旅行手记（公开版）｜ 生成于 2026-09-18</footer>
+</div>
+</body>
+</html>
